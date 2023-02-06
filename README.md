@@ -216,4 +216,4 @@ Well_Extractions
 * CSV files containing model information extracted at well locations.
 
 
--- Erik A. Kneller 2022
+-- Erik A. Kneller & David J. Gombosi 2022
