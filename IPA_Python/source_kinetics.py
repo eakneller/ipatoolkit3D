@@ -36,9 +36,10 @@ class Srckinetics:
 #                 gas_frac_adj_TRmin, 
 #                 gas_frac_adj_TRmax
         self.imass_gen = model.imass_gen
-        self.file_path_local = model.input_path + "kinetics_library.csv"
-        self.file_path_master = (model.script_path 
-                                 + "\\ipa_data\\kinetics_library.csv")
+        self.file_path_local = os.path.join(
+            model.input_path, "kinetics_library.csv")
+        self.file_path_master = os.path.join(
+            model.script_path,"ipa_data", "kinetics_library.csv")
         self.iuse_high_lom_gas = model.iuse_high_lom_gas
         self.src_top_names = model.src_top_names
         self.inert_frac = model.inert_frac
