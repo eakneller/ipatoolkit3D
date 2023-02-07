@@ -94,7 +94,7 @@ def make_moho_TVD(xth_xy, model):
         return moho_xy_np
     
 
-#@jit(nopython=True, parallel=True)
+@jit(nopython=True)
 def do_bisection_FiniteRifting(
                                 nx, ny, ttsub_pd_xy_np, age_s_xy_np, 
                                 age_e_xy_np, mantle_fac1_xy_np, 
@@ -405,11 +405,11 @@ def match_present_day_thermo_tect(ioutput, iup_in_air, model):
                         mantle_fac1_xy_np
                         )
     elif inv_itype == 1:
-        (
-            do_bisection_FiniteRifting_active
-        ) = manage_parallel.manage_parallel(
-                                        do_bisection_FiniteRifting, itype3D)
-        do_bisection_FiniteRifting_active(
+        #(
+        #    do_bisection_FiniteRifting_active
+        #) = manage_parallel.manage_parallel(
+        #                                do_bisection_FiniteRifting, itype3D)
+        do_bisection_FiniteRifting(
                                     nx, ny, ttsub_pd_xy_np, age_s_xy_np, 
                                     age_e_xy_np, mantle_fac1_xy_np, 
                                     tc_initial, tm_initial,
