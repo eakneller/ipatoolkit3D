@@ -42,13 +42,13 @@ ECHO ">> Setting variables"
 set exe_path=C:\ProgramData\Anaconda3\python.exe
 
 :: IPAtoolkit3D directory path
-set ipa_main_path=C:\Users\eaknell\Desktop\IPAtoolkit3D_1.0
+set ipa_main_path=C:\Users\eaknell\Desktop\ipatoolkit3D-main
 
 :: Main IPA input directory located at main IPA path
-set input_dir=Input_Maps\LiberiaFlex2022
+set input_dir=Input_Maps\ColoradoBasin
 
 :: Path where output will be sent
-set output_path=D:\IPAtoolkit3D\TestFlex2022_charge1
+set output_path=C:\Users\eaknell\Desktop\ipatoolkit3D-main\Output_Maps
 
 set run_stype=single
 set nruns=1
