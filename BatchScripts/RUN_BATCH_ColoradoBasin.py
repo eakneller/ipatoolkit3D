@@ -72,11 +72,11 @@ import RiskModel
 """
 
 if __name__ == "__main__":
-    ipa_main_path = r'C:\Users\eaknell\Desktop\IPAtoolkit3D_1.0'
+    ipa_main_path = r'C:\Users\eaknell\Desktop\ipatoolkit3D-main'
     ipa_python_path = os.path.join(ipa_main_path, "IPA_Python")
     model_name = "ColoradoBasin"
     input_path = os.path.join(ipa_main_path, "Input_Maps", model_name)
-    output_path = os.path.join(r'D:\IPAtoolkit3D', model_name + "_test1")
+    output_path = os.path.join(ipa_main_path, "Output_Maps", model_name + "_test1")
     
     run_stype = 'single'
     nruns_monte_carlo = 1
