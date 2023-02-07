@@ -30,18 +30,20 @@ IPAtoolkit3D can be executed using different methods:
 * Use the "Execute Python Script" button in the "Model Input" tab of 
     IPAtoolkit3D_1.0.xlsm after setting paths and ensuring that a model is 
     loaded into the workbook (see Workflow tab).
-* Use the Python or .bat scripts in BatchScripts. These scripts require 
+* Use the Python or .bat scripts in IPA_Python/BatchScripts. These scripts require 
     the user to define run type information, paths and other inputs before 
-    executing.
+    executing. We recommend initially running scripts from Spyder using IPA_Python 
+    as the project directory.
 
 Running Integrated Tests
 -------------------------------------------------------------------------------
-Use the script IPA_Python\integrated_tests\RUN_TESTS.py to run integrated
-test cases. We recommend running these cases before starting a model exercise
-to ensure that the code is working properly on your system. This script 
-requires the user to choose which test to run and provides information on the 
-parts of the code that are tested and success criteria. Integrated tests 
-should also be used for testing modified versions of this code.
+First unzip the directory IPA_Python\integrated_tests. Then use the script 
+IPA_Python\integrated_tests\RUN_TESTS.py to run integrated test cases. We 
+recommend running these cases before starting a model exercise to ensure that 
+the code is working properly on your system. This script requires the user to 
+choose which test to run and provides information on the parts of the code that 
+are tested and success criteria. Integrated tests should also be used for testing 
+modified versions of this code.
 
 Turning Parallel On/Off
 -------------------------------------------------------------------------------
@@ -55,10 +57,14 @@ model (iuse_numerical_rift=1) works when using the parallel option.
 
 Running the Colorado Basin Example
 -------------------------------------------------------------------------------
-Update the paths and then execute the following script using the Anaconda 
-python executable:
+First unzip the file Input_Maps\ColoradoBasin.zip. Then update paths located in 
+the following script:
   
-    BatchScripts\RUN_BATCH_ColoradoBasin.py
+    IPA_Python\BatchScripts\RUN_BATCH_ColoradoBasin.py
+
+Finally, execute this script using the Anaconda python executable. This script
+can also be executed from Spyder after making a project using the IPA_Python
+directory.
 
 Developer Notes
 -------------------------------------------------------------------------------
