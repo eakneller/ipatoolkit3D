@@ -235,7 +235,7 @@ def do_bisection_FiniteRifting(
                 crustal_thick_xy_np[i][j] = -99999.0
 
 
-#@jit(nopython=True, parallel=True)
+@jit(nopython=True)
 def do_bisection(
                     nx, ny, ttsub_pd_xy_np, age_s_xy_np, age_e_xy_np, 
                     shift_fac, event_age, 
@@ -394,10 +394,7 @@ def match_present_day_thermo_tect(ioutput, iup_in_air, model):
     delta_best_fit_xy_np = np.zeros((nx,ny))
     crustal_thick_xy_np = np.zeros((nx,ny))
     if inv_itype == 0:
-        (
-            do_bisection_active
-        ) = manage_parallel.manage_parallel(do_bisection, itype3D)
-        do_bisection_active(
+        do_bisection(
                         nx, ny, ttsub_pd_xy_np, age_s_xy_np, age_e_xy_np,
                         shift_fac, event_age, 
                         tc_initial, tm_initial, rho_water, rho_crust, 
