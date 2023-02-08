@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
-import RiskModel  
+import sys
 """ IPA3D Batch Run Script
 
     This script can be used to run IPA3D in batch mode.
@@ -84,7 +84,8 @@ if __name__ == "__main__":
     src_index_list_bulk_gor = [-1]
     iuse_max_state = 0
     itype3D = 1
-    
+    sys.path.append(ipa_python_path)
+    import RiskModel
     RiskModel.initiate_risk_runs(
                                  ipa_python_path, input_path, output_path, 
                                  run_stype, nruns_monte_carlo, ioutput_type, 
