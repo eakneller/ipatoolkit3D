@@ -4,7 +4,7 @@ integrated petroleum systems analysis (IPA) including parallel map-based basin
 thermal history with inverted boundary conditions, hydrocarbon generation and 
 expulsion, flexural restoration of basin geometry, flexure-based salt restoration 
 and trap-specific charge calculations based on evolving migration fetch areas. 
-Numba is used to parallelize large loops and translate numerically intensive 
+Numba is used to parallelize loops and translate numerically intensive 
 Python code into optimized machine code using the LLVM compiler library.
 
 The following versions were used to build the IPAtoolkit3D:
