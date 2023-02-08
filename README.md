@@ -14,7 +14,7 @@ All Python code is located in a directory called IPA_Python.
 Defining Inputs and Executing IPAtoolkit3D
 -------------------------------------------------------------------------------
 Input, output and Python execution can be managed via the macro-enabled workbook 
-IPAtoolkit3D_1.0.xlsm that uses simple VBA scripts to export and import input 
+IPAtoolkit3D_1.0.xlsm that uses VBA scripts to export and import input 
 files.
 
 Input files include CSV files (.csv), Zmaps and ASCII polygon files (.poly) that 
