@@ -1,6 +1,6 @@
 # ipatoolkit3D
 IPAtoolkit3D is a collection of Python scripts using Scipy, Numpy and Numba for 
-parallel map-based thermal, integrated charge and flexure calculations.
+integrated petroleum systems analysis (IPA) including parallel map-based basin thermal history with inverted boundary conditions, hydrocarbon generation and expulsion, flexural restoration of basin geometry, flexure-based salt restoration and trap-specific charge calculations based on evolving migration fetch areas.
 
 The following versions were used to build the IPAtoolkit3D:
 * conda 4.3.3
