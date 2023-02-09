@@ -7,12 +7,9 @@ and trap-specific charge calculations based on evolving migration fetch areas.
 Numba is used to parallelize loops and translate numerically intensive 
 Python code into optimized machine code using the LLVM compiler library.
 
-The following versions were used to build the IPAtoolkit3D:
-* conda 4.3.3
-* Python 3.6.3
-* numpy 1.13.3
-* numba 0.35.0
-* scipy 0.19.1
+We recommend using the latest standard Anaconda Python distribution, which 
+should include all required packages needed to run IPAtoolkit3D. The Python 
+packages Numpy, Scipy and Numba are critical for running IPAtoolkit3D.
 
 All Python code is located in a directory called IPA_Python.
 
