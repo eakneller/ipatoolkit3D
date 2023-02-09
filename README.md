@@ -32,7 +32,7 @@ IPAtoolkit3D can be executed using different methods:
 * Use the "Execute Python Script" button in the "Model Input" tab of 
     IPAtoolkit3D_1.0.xlsm after setting paths and ensuring that a model is 
     loaded into the workbook (see Workflow tab).
-* Use the Python or .bat scripts in IPA_Python/BatchScripts. These scripts require 
+* Use the Python (Windows or Linux) or .bat (Windows) scripts in IPA_Python/BatchScripts. These scripts require 
     the user to define run type information, paths and other inputs before 
     executing. We recommend initially running scripts from Spyder using IPA_Python 
     as the project directory.
