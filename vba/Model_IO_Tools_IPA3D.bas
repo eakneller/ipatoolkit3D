@@ -1,4 +1,3 @@
-Attribute VB_Name = "Model_IO_Tools_IPA3D"
 Sub SaveCSV(sheet_with_input_path As String, cell_input_path As String, _
             output_csv As String, sheet_tmp_csv As String, _
             range_tmp_csv As String, row_max As Integer, _
@@ -10,6 +9,8 @@ Dim Line As String
 Dim LineValues() As Variant
 Dim OutputFileNum As Integer
 Dim SheetValues() As Variant
+
+DecimalSeparator = Application.International(xlDecimalSeparator)
 
 input_path = Sheets(sheet_with_input_path).Range(cell_input_path).Value
 output_csv_path = input_path & "\" & output_csv
@@ -25,6 +26,8 @@ For RowNum = 1 To row_max
   For ColNum = 1 To col_max
     If IsError(SheetValues(RowNum, ColNum)) Then
         LineValues(ColNum) = 0
+    ElseIf IsNumeric(SheetValues(RowNum, ColNum)) Then
+        LineValues(ColNum) = Replace(SheetValues(RowNum, ColNum), DecimalSeparator, ".")
     Else
         LineValues(ColNum) = SheetValues(RowNum, ColNum)
     End If
