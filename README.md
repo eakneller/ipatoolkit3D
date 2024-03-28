@@ -23,7 +23,7 @@ Input files include CSV files (.csv), Zmaps and ASCII polygon files (.poly) that
 are located in a user defined directory with a user defined path. Use a map 
 editing software package to build and edit Zmaps. The user can manually edit 
 CSV files but the format used in example files should be strictly followed. We 
-recommended using the macro-enabled workbook called IPAtoolkit3D_1.0.xlsm to 
+recommend using the macro-enabled workbook called IPAtoolkit3D_1.0.xlsm to 
 create, load and export input files. See the Workflow tab in the workbook for 
 details.
 
