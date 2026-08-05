@@ -1,3 +1,14 @@
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+> It is provided **solely for reproducibility** of the associated publication — not for production use or new projects. The code reflects research work as written at the time.
+## Associated publication
+
+This repository accompanies:
+
+> **Rapid and integrated petroleum systems analysis with dynamic gas fraction and flexural reconstructions: Application to hydrocarbon charge and commodity risk**
+> Kneller, E. A. & Gombosi, D. J. — *Marine and Petroleum Geology* (2023)
+> https://doi.org/10.1016/j.marpetgeo.2023.106281
+
 # ipatoolkit3D
 IPAtoolkit3D is a collection of Python scripts using Scipy, Numpy and Numba for 
 integrated petroleum systems analysis (IPA) including parallel map-based basin 
